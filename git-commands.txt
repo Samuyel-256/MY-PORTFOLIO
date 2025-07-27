@@ -1,0 +1,13 @@
+Git Commands to Deploy Portfolio:
+
+1. Open Command Prompt/PowerShell in your portfolio folder
+2. Run these commands one by one:
+
+git init
+git add .
+git commit -m "🚀 Initial portfolio deployment"
+git branch -M main
+git remote add origin https://github.com/Samuyel-256/MY-PORTFOLIO.git
+git push -u origin main
+
+Note: You might need to authenticate with GitHub when pushing.
