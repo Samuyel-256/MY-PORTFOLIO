@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (resumeBtn) {
         resumeBtn.addEventListener('click', function(e) {
             e.preventDefault();
-            const resumeUrl = 'https://drive.google.com/file/d/1BAJHg57k0HVqlVEoP6O1wxAbYyvK6GNW/view?usp=drivesdk';
+            const resumeUrl = 'https://drive.google.com/file/d/1eUeRvN4P1bRxnl7KmpOgFSY9dNwzw0y1/view?usp=sharing';
             window.open(resumeUrl, '_blank');
         });
     }
