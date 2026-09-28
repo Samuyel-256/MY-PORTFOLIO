@@ -1,145 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuyel - Portfolio</title>
+    <title>Samuyel Dammu | AI & ML Engineer & Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Samuyel Dammu - AI & ML Engineer, Python Full Stack Developer, and Prompt Engineering Specialist.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Background Ambient Glow Orbs -->
+    <div class="ambient-glow orb-1" aria-hidden="true"></div>
+    <div class="ambient-glow orb-2" aria-hidden="true"></div>
+    <div class="ambient-glow orb-3" aria-hidden="true"></div>
+
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
         <div class="nav-container">
-            <div class="nav-logo">
+            <a href="#home" class="nav-logo" aria-label="Samuyel Dammu Home">
+                <span class="logo-bracket">&lt;</span>
                 <span class="logo-text">Samuyel</span>
-            </div>
-            <div class="nav-menu">
+                <span class="logo-dot">.</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            
+            <div class="nav-menu" id="navMenu">
                 <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#education" class="nav-link">Education</a>
                 <a href="#skills" class="nav-link">Skills</a>
                 <a href="#internships" class="nav-link">Internships</a>
                 <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
                 <a href="#achievements" class="nav-link">Achievements</a>
                 <a href="#interests" class="nav-link">Interests</a>
                 <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <div class="nav-controls">
+                <!-- Light / Dark Mode Toggle Button -->
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle light and dark theme" title="Toggle Light / Dark Mode">
+                    <i class="fas fa-sun sun-icon" aria-hidden="true"></i>
+                    <i class="fas fa-moon moon-icon" aria-hidden="true"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
+    <section id="home" class="hero" aria-label="Hero Introduction">
+        <div class="container hero-container">
             <div class="hero-content">
                 <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="pulse-dot" aria-hidden="true"></span>
+                        <span>Available for Opportunities</span>
+                    </div>
                     <h1 class="hero-title">
-                        <span class="gradient-text">Hi, I'm Samuyel</span>
+                        Hi, I'm <span class="gradient-text">Samuyel Dammu</span>
                     </h1>
-                    <h2 class="hero-subtitle">AI & ML Engineering Graduate</h2>
+                    <h2 class="hero-subtitle">
+                        <span class="typed-role">AI & ML Engineering Graduate</span>
+                    </h2>
                     <p class="hero-description">
                         B.Tech graduate in CSE (AI & ML) from Kakinada Institute of Engineering and Technology. 
-                        Passionate about Python, prompt engineering, and AI-powered video editing.
+                        Passionate about Python full-stack development, multi-AI systems, prompt engineering, and intelligent media processing.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Explore Projects</span>
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        </a>
                     </div>
-                    <div class="social-links">
-                        <a href="https://github.com/Samuyel-256" class="social-link github" target="_blank">
-                            <i class="fab fa-github"></i>
+                    <div class="social-links" aria-label="Social Profiles">
+                        <a href="https://github.com/Samuyel-256" class="social-link github" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" title="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/samuyel-dammu-732284322/" class="social-link linkedin" target="_blank">
-                            <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/samuyel-dammu-732284322/" class="social-link linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" title="LinkedIn">
+                            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                         </a>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dammusamuyel123@gmail.com" class="social-link email" target="_blank">
-                            <i class="fas fa-envelope"></i>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dammusamuyel123@gmail.com" class="social-link email" target="_blank" rel="noopener noreferrer" aria-label="Email Samuyel" title="Email">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <div class="image-container">
-                        <img src="https://res.cloudinary.com/ddxtfqmt4/image/upload/v1753425147/1741883331918_u8sbv6.jpg" alt="Samuyel Dammu" class="profile-image">
-                        <div class="floating-elements">
-                            <div class="floating-element element-1"></div>
-                            <div class="floating-element element-2"></div>
-                            <div class="floating-element element-3"></div>
+                    <div class="image-wrapper">
+                        <div class="glow-ring" aria-hidden="true"></div>
+                        <div class="glow-ring-2" aria-hidden="true"></div>
+                        <div class="image-container">
+                            <img src="https://res.cloudinary.com/ddxtfqmt4/image/upload/v1753425147/1741883331918_u8sbv6.jpg" alt="Professional portrait photograph of Samuyel Dammu, AI and Machine Learning Engineer" class="profile-image">
+                        </div>
+                        <div class="floating-badge badge-ai" aria-hidden="true">
+                            <i class="fas fa-brain"></i>
+                            <span>AI / ML</span>
+                        </div>
+                        <div class="floating-badge badge-code" aria-hidden="true">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to About Section">
+            <span class="scroll-mouse">
+                <span class="scroll-wheel"></span>
+            </span>
+        </a>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about" aria-label="About Me">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <span class="section-tag">Get To Know Me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
             <div class="about-content">
-                <div class="about-text">
+                <div class="about-card glass-panel">
                     <p class="about-description">
                         I am a B.Tech graduate in Computer Science & Engineering (AI & ML) from 
-                        Kakinada Institute of Engineering and Technology. As a Python enthusiast at the beginner level, 
-                        with intermediate skills in HTML and CSS, I'm passionate about exploring the intersection of 
-                        technology and creativity.
+                        <strong>Kakinada Institute of Engineering and Technology</strong>. I specialize in building real-world AI applications, full-stack solutions, and leveraging multi-model generative AI to solve practical problems.
                     </p>
                     <p class="about-description">
-                        My interests span across prompt engineering, AI-powered video editing, and traveling. 
-                        I enjoy discovering new perspectives that fuel my creativity and problem-solving approach.
+                        My expertise spans machine learning frameworks, computer vision, prompt engineering with OpenAI, and cloud-native virtual internships with industry leaders including <strong>Google, Zscaler, IBM, and AICTE</strong>.
                     </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">Internships & Programs</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label">AI & ML Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Verified Certifications</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="education">
+    <section id="education" class="education" aria-label="Education">
         <div class="container">
-            <h2 class="section-title">Education</h2>
+            <div class="section-header">
+                <span class="section-tag">Academic Background</span>
+                <h2 class="section-title">Education</h2>
+            </div>
             <div class="education-grid">
-                <div class="education-card">
-                    <div class="education-icon">
+                <div class="education-card glass-panel">
+                    <div class="education-icon" aria-hidden="true">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="education-details">
-                        <h3>B.Tech in Computer Science & Engineering (AI & ML)</h3>
+                        <div class="education-meta">
+                            <span class="education-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> 2022 – 2026</span>
+                            <span class="education-badge completed"><i class="fas fa-check" aria-hidden="true"></i> Completed</span>
+                        </div>
+                        <h3>B.Tech in CSE (AI & ML)</h3>
                         <h4>KAKINADA INSTITUTE OF ENGINEERING AND TECHNOLOGY</h4>
-                        <span class="education-date">2022 – 2026</span>
-                        <p>Completed B.Tech in CSE (AI & ML) with a CGPA of 7.4/10</p>
-                        <div class="education-badge completed">Completed</div>
+                        <p>Specialized in Artificial Intelligence & Machine Learning algorithms, Data Structures, and Software Engineering.</p>
+                        <div class="education-score">
+                            <span class="score-tag">CGPA: <strong>7.4 / 10</strong></span>
+                        </div>
                     </div>
                 </div>
-                <div class="education-card">
-                    <div class="education-icon">
+
+                <div class="education-card glass-panel">
+                    <div class="education-icon" aria-hidden="true">
                         <i class="fas fa-school"></i>
                     </div>
                     <div class="education-details">
+                        <div class="education-meta">
+                            <span class="education-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> 2020 – 2022</span>
+                            <span class="education-badge completed"><i class="fas fa-check" aria-hidden="true"></i> Completed</span>
+                        </div>
                         <h3>Intermediate (MPC)</h3>
                         <h4>AP Model School, Hamsavaram</h4>
-                        <span class="education-date">2020 – 2022</span>
-                        <p>Completed Higher Secondary Education with a total score of 611/1000</p>
-                        <div class="education-badge completed">Completed</div>
+                        <p>Focused on Mathematics, Physics, and Chemistry, cultivating strong analytical and logical reasoning skills.</p>
+                        <div class="education-score">
+                            <span class="score-tag">Score: <strong>611 / 1000</strong></span>
+                        </div>
                     </div>
                 </div>
-                <div class="education-card">
-                    <div class="education-icon">
+
+                <div class="education-card glass-panel">
+                    <div class="education-icon" aria-hidden="true">
                         <i class="fas fa-award"></i>
                     </div>
                     <div class="education-details">
-                        <h3>10th (SSC)</h3>
+                        <div class="education-meta">
+                            <span class="education-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> 2020</span>
+                            <span class="education-badge completed"><i class="fas fa-check" aria-hidden="true"></i> Completed</span>
+                        </div>
+                        <h3>Secondary School Certificate (10th SSC)</h3>
                         <h4>AP Model School, Hamsavaram</h4>
-                        <span class="education-date">2020</span>
-                        <p>Completed my SSC with a total score of 8.8 points (88%)</p>
-                        <div class="education-badge completed">Completed</div>
+                        <p>Completed secondary school education with distinction in science and mathematics.</p>
+                        <div class="education-score">
+                            <span class="score-tag">Grade: <strong>8.8 CGPA (88%)</strong></span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -147,79 +225,108 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills" aria-label="Skills">
         <div class="container">
-            <h2 class="section-title">Skills</h2>
+            <div class="section-header">
+                <span class="section-tag">Technical Competencies</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
             <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-html5"></i>
-                    </div>
-                    <h3>HTML</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="70%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-css3-alt"></i>
-                    </div>
-                    <h3>CSS</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="70%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-python"></i>
+                <div class="skill-card glass-panel">
+                    <div class="skill-top">
+                        <div class="skill-icon python-icon" aria-hidden="true"><i class="fab fa-python"></i></div>
+                        <span class="skill-percentage">90%</span>
                     </div>
                     <h3>Python</h3>
-                    <div class="skill-bar">
+                    <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                         <div class="skill-progress" data-width="90%"></div>
                     </div>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-edit"></i>
+
+                <div class="skill-card glass-panel">
+                    <div class="skill-top">
+                        <div class="skill-icon brain-icon" aria-hidden="true"><i class="fas fa-brain"></i></div>
+                        <span class="skill-percentage">80%</span>
                     </div>
-                    <h3>Editing</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="75%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Prompting</h3>
-                    <div class="skill-bar">
-                        <div class="skill-progress" data-width="70%"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-                    <h3>Git & GitHub</h3>
-                    <div class="skill-bar">
+                    <h3>AI & Machine Learning</h3>
+                    <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                         <div class="skill-progress" data-width="80%"></div>
                     </div>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-code"></i>
+
+                <div class="skill-card glass-panel">
+                    <div class="skill-top">
+                        <div class="skill-icon prompt-icon" aria-hidden="true"><i class="fas fa-wand-magic-sparkles"></i></div>
+                        <span class="skill-percentage">85%</span>
                     </div>
-                    <h3>VSCode & PyCharm</h3>
-                    <div class="skill-bar">
+                    <h3>Prompt Engineering</h3>
+                    <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                         <div class="skill-progress" data-width="85%"></div>
                     </div>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-users"></i>
+
+                <div class="skill-card glass-panel">
+                    <div class="skill-top">
+                        <div class="skill-icon git-icon" aria-hidden="true"><i class="fab fa-git-alt"></i></div>
+                        <span class="skill-percentage">80%</span>
                     </div>
-                    <h3>Leadership</h3>
-                    <div class="skill-bar">
+                    <h3>Git & GitHub</h3>
+                    <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                        <div class="skill-progress" data-width="80%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-panel">
+                    <div class="skill-top">
+                        <div class="skill-icon html-icon" aria-hidden="true"><i class="fab fa-html5"></i></div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="skill-progress" data-width="75%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-panel">
+                    <div class="skill-top">
+                        <div class="skill-icon css-icon" aria-hidden="true"><i class="fab fa-css3-alt"></i></div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <h3>CSS3 & Modern UI</h3>
+                    <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="skill-progress" data-width="75%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-panel">
+                    <div class="skill-top">
+                        <div class="skill-icon tools-icon" aria-hidden="true"><i class="fas fa-code"></i></div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <h3>VSCode & PyCharm</h3>
+                    <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                        <div class="skill-progress" data-width="85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-panel">
+                    <div class="skill-top">
+                        <div class="skill-icon edit-icon" aria-hidden="true"><i class="fas fa-video"></i></div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <h3>AI Video & Media Editing</h3>
+                    <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="skill-progress" data-width="75%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card glass-panel">
+                    <div class="skill-top">
+                        <div class="skill-icon team-icon" aria-hidden="true"><i class="fas fa-users-gear"></i></div>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <h3>Leadership & Collaboration</h3>
+                    <div class="skill-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
                         <div class="skill-progress" data-width="88%"></div>
                     </div>
                 </div>
@@ -228,50 +335,172 @@
     </section>
 
     <!-- Internships Section -->
-    <section id="internships" class="internships">
+    <section id="internships" class="internships" aria-label="Internships and Work Experience">
         <div class="container">
-            <h2 class="section-title">Internships</h2>
+            <div class="section-header">
+                <span class="section-tag">Industry Experience</span>
+                <h2 class="section-title">Internships & Programs</h2>
+            </div>
             <div class="internships-grid">
-                <div class="internship-card">
+                <!-- Zscaler Internship -->
+                <div class="internship-card glass-panel">
+                    <div class="internship-badge-row">
+                        <span class="internship-pill"><i class="fas fa-shield-halved" aria-hidden="true"></i> Cloud & Network Security</span>
+                    </div>
+                    <h3>Zscaler Networking Virtual Intern</h3>
+                    <h4>ZSCALER - EDU SKILLS</h4>
+                    <p>Hands-on virtual internship focusing on cloud security architecture, Zscaler Internet Access (ZIA), and zero-trust networking fundamentals with virtual lab environments.</p>
+                </div>
+
+                <!-- Google AI/ML Virtual Internship -->
+                <div class="internship-card glass-panel">
+                    <div class="internship-badge-row">
+                        <span class="internship-pill"><i class="fab fa-google" aria-hidden="true"></i> AI / ML Virtual</span>
+                    </div>
+                    <h3>Google AI/ML Virtual Intern</h3>
+                    <h4>GOOGLE AIML - AICTE</h4>
+                    <p>Completed intensive training in artificial intelligence, machine learning pipelines, TensorFlow models, neural networks, and real-world deployment practices supported by AICTE.</p>
+                </div>
+
+                <!-- Python Full Stack AICTE -->
+                <div class="internship-card glass-panel">
+                    <div class="internship-badge-row">
+                        <span class="internship-pill"><i class="fab fa-python" aria-hidden="true"></i> Full Stack Engineering</span>
+                    </div>
                     <h3>Python Full Stack Intern</h3>
-                    <h4>Sirionex</h4>
-                    <p>Learning Python and doing projects in Python Full Stack development.</p>
+                    <h4>PYTHON FULL STACK - AICTE</h4>
+                    <p>Engineered comprehensive web applications leveraging Python backend frameworks, database architecture, RESTful API design, and responsive frontend interfaces.</p>
                 </div>
-                <div class="internship-card">
+
+                <!-- IIIT Hyderabad -->
+                <div class="internship-card glass-panel">
+                    <div class="internship-badge-row">
+                        <span class="internship-pill"><i class="fas fa-brain" aria-hidden="true"></i> Machine Learning</span>
+                    </div>
                     <h3>Foundations of Modern Machine Learning</h3>
-                    <h4>IIIT Hyderabad</h4>
-                    <p>Gained comprehensive knowledge in modern machine learning techniques and applications</p>
+                    <h4>IIIT HYDERABAD</h4>
+                    <p>Gained comprehensive knowledge in modern machine learning techniques, supervised & unsupervised models, and mathematical formulations under expert mentorship.</p>
                 </div>
-                <div class="internship-card">
+
+                <!-- IBM SkillsBuild -->
+                <div class="internship-card glass-panel">
+                    <div class="internship-badge-row">
+                        <span class="internship-pill"><i class="fab fa-ibm" aria-hidden="true"></i> Student Leadership</span>
+                    </div>
                     <h3>Student Ambassador Program</h3>
-                    <h4>IBM SkillsBuild</h4>
-                    <p>Promoted digital learning and skill development initiatives among students</p>
+                    <h4>IBM SKILLSBUILD</h4>
+                    <p>Promoted digital learning and technical skill development initiatives across colleges, driving adoption of IBM professional certification courses.</p>
                 </div>
-                <div class="internship-card">
-                    <h3>Certified Internships</h3>
-                    <h4>AICTE Internship Portal</h4>
-                    <p>Completed multiple certified internships through the official AICTE platform</p>
-                </div>
-                <div class="internship-card">
+
+                <!-- Edunet Foundation / TechSaksham -->
+                <div class="internship-card glass-panel">
+                    <div class="internship-badge-row">
+                        <span class="internship-pill"><i class="fas fa-hands-asl-interpreting" aria-hidden="true"></i> AI Innovation</span>
+                    </div>
                     <h3>Edunet Foundation Intern</h3>
-                    <h4>Edunet Foundation</h4>
-                    <p>Developed "Sign Speak: The Silent Communicator" project during internship focusing on AI-powered communication solutions</p>
+                    <h4>TECHSAKSHAM BY EDUNET FOUNDATION</h4>
+                    <p>Developed "Sign Speak: The Silent Communicator" project during internship focusing on computer vision and AI-powered assistive communication solutions.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects" aria-label="Projects">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <div class="section-header">
+                <span class="section-tag">Featured Work</span>
+                <h2 class="section-title">Projects</h2>
+            </div>
             <div class="projects-grid">
-                <div class="project-card">
+                <!-- 1. AI PORTFOLIO DEVELOPER (FEATURED) -->
+                <div class="project-card project-featured glass-panel">
+                    <div class="featured-indicator">
+                        <span class="featured-pulse" aria-hidden="true"></span>
+                        <span>Multi-AI System • Live App</span>
+                    </div>
+                    <div class="project-header">
+                        <h3>AI Portfolio Developer Using Multi AI</h3>
+                        <div class="project-links">
+                            <a href="https://ai-portfolio-maker-542723006193.us-west1.run.app/" class="project-link" target="_blank" rel="noopener noreferrer" title="Live Application" aria-label="Live Demo for AI Portfolio Developer">
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        An intelligent, end-to-end multi-agent AI system designed to build and deploy personalized, production-ready developer portfolios with automated design styling, intelligent content generation, and cloud deployment.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag"><i class="fas fa-microchip" aria-hidden="true"></i> Multi-AI Agents</span>
+                        <span class="tech-tag"><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i> Generative AI</span>
+                        <span class="tech-tag"><i class="fas fa-cloud" aria-hidden="true"></i> Google Cloud Run</span>
+                        <span class="tech-tag"><i class="fab fa-python" aria-hidden="true"></i> Python</span>
+                    </div>
+                    <div class="project-cta-row">
+                        <a href="https://ai-portfolio-maker-542723006193.us-west1.run.app/" class="btn-live-project" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-rocket" aria-hidden="true"></i>
+                            <span>Launch Live Application</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2. AI DECK (FEATURED LIKE AI PORTFOLIO DEVELOPER) -->
+                <div class="project-card project-featured glass-panel">
+                    <div class="featured-indicator">
+                        <span class="featured-pulse" aria-hidden="true"></span>
+                        <span>AI Ecosystem • Live Platform</span>
+                    </div>
+                    <div class="project-header">
+                        <h3>AI DECK Hub</h3>
+                        <div class="project-links">
+                            <a href="https://aideck.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer" title="Live Site" aria-label="External Link to AI DECK Hub">
+                                <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        A curated aggregator platform bringing together the world's most capable AI tools, generative systems, developer APIs, and productivity enhancers in one cohesive, easily accessible workspace.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag"><i class="fas fa-layer-group" aria-hidden="true"></i> AI Aggregator</span>
+                        <span class="tech-tag"><i class="fas fa-globe" aria-hidden="true"></i> Web Platform</span>
+                        <span class="tech-tag"><i class="fas fa-bolt" aria-hidden="true"></i> Netlify Cloud</span>
+                        <span class="tech-tag"><i class="fas fa-plug" aria-hidden="true"></i> API Integrations</span>
+                    </div>
+                    <div class="project-cta-row">
+                        <a href="https://aideck.netlify.app/" class="btn-live-project" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-rocket" aria-hidden="true"></i>
+                            <span>Launch Live Platform</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3. RAIN WATCH (NEW CLOTHES PROTECTION PROJECT) -->
+                <div class="project-card glass-panel">
+                    <div class="project-header">
+                        <h3>Rain Watch: Smart Clothes Protection Alarm</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Samuyel-256" class="project-link" target="_blank" rel="noopener noreferrer" title="GitHub" aria-label="GitHub Repository for Rain Watch"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        An intelligent rain monitoring and alerting system engineered to protect washed clothes drying outdoors. Users activate alert mode when clothes are hung out; the system monitors real-time precipitation radar and triggers loud alarms and push alerts before rainfall hits, saving clothes from getting wet.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag"><i class="fas fa-cloud-showers-heavy" aria-hidden="true"></i> Weather Radar</span>
+                        <span class="tech-tag"><i class="fas fa-bell" aria-hidden="true"></i> Audio Alarm</span>
+                        <span class="tech-tag"><i class="fas fa-shirt" aria-hidden="true"></i> Clothes Care</span>
+                        <span class="tech-tag"><i class="fab fa-python" aria-hidden="true"></i> Python</span>
+                    </div>
+                </div>
+
+                <!-- 4. Driver Drowsiness Detection System -->
+                <div class="project-card glass-panel">
                     <div class="project-header">
                         <h3>Driver Drowsiness Detection System</h3>
                         <div class="project-links">
-                            <a href="https://github.com/Samuyel-256" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://github.com/Samuyel-256" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Samuyel-256" class="project-link" target="_blank" rel="noopener noreferrer" title="Source Code" aria-label="GitHub Source Code"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/Samuyel-256" class="project-link" target="_blank" rel="noopener noreferrer" title="Project Details" aria-label="External Link to Driver Drowsiness Project"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <p class="project-description">
@@ -284,75 +513,164 @@
                         <span class="tech-tag">Dlib</span>
                     </div>
                 </div>
-                <div class="project-card">
+
+                <!-- 5. Sign Speak: The Silent Communicator -->
+                <div class="project-card glass-panel">
                     <div class="project-header">
                         <h3>Sign Speak: The Silent Communicator</h3>
                         <div class="project-links">
-                            <a href="https://github.com/Samuyel-256/Sign-speak-the-silent-communicator" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://github.com/Samuyel-256/Sign-speak-the-silent-communicator" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Samuyel-256/Sign-speak-the-silent-communicator" class="project-link" target="_blank" rel="noopener noreferrer" title="GitHub Repo" aria-label="GitHub Repository"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/Samuyel-256/Sign-speak-the-silent-communicator" class="project-link" target="_blank" rel="noopener noreferrer" title="Live Preview" aria-label="Live Demo Link"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <p class="project-description">
-                        An innovative communication tool designed to bridge the gap between hearing and deaf communities 
-                        through advanced sign language recognition technology.
+                        An innovative communication tool designed to bridge the gap between hearing and deaf communities through advanced sign language gesture recognition and real-time text translation.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">AI/ML</span>
                         <span class="tech-tag">Computer Vision</span>
                         <span class="tech-tag">Python</span>
+                        <span class="tech-tag">MediaPipe</span>
                     </div>
                 </div>
-                <div class="project-card">
+
+                <!-- 6. Crop Prediction -->
+                <div class="project-card glass-panel">
                     <div class="project-header">
-                        <h3>Crop Prediction</h3>
+                        <h3>Crop Prediction Machine Learning</h3>
                         <div class="project-links">
-                            <a href="https://github.com/Samuyel-256/crop_prediction" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://github.com/Samuyel-256/crop_prediction" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Samuyel-256/crop_prediction" class="project-link" target="_blank" rel="noopener noreferrer" title="GitHub Repo" aria-label="GitHub Repository"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/Samuyel-256/crop_prediction" class="project-link" target="_blank" rel="noopener noreferrer" title="External Link" aria-label="External Link to Crop Prediction"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <p class="project-description">
-                        A machine learning solution for predicting crop yields and optimal growing conditions 
-                        to help farmers make informed decisions.
+                        A predictive agriculture machine learning solution analyzing environmental parameters (soil nutrients, rainfall, temperature) to recommend optimal crop selection and maximize agricultural yield.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Machine Learning</span>
                         <span class="tech-tag">Data Science</span>
                         <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-Learn</span>
                     </div>
                 </div>
-                <div class="project-card">
+
+                <!-- 7. Chemical Reaction Outcome Predictor -->
+                <div class="project-card glass-panel">
                     <div class="project-header">
                         <h3>Chemical Reaction Outcome Predictor</h3>
                         <div class="project-links">
-                            <a href="https://github.com/santhosh220z/CHEMICAL-REACTIONS-PROJECT" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="https://github.com/santhosh220z/CHEMICAL-REACTIONS-PROJECT" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/santhosh220z/CHEMICAL-REACTIONS-PROJECT" class="project-link" target="_blank" rel="noopener noreferrer" title="GitHub Repo" aria-label="GitHub Repository"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/santhosh220z/CHEMICAL-REACTIONS-PROJECT" class="project-link" target="_blank" rel="noopener noreferrer" title="External Link" aria-label="External Link"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <p class="project-description">
-                        An AI-powered system that predicts chemical reaction outcomes, helping researchers 
-                        and students understand complex chemical processes.
+                        An AI-driven cheminformatics system that models chemical interactions and predicts reaction products, assisting research workflows and students in chemistry analysis.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">AI/ML</span>
-                        <span class="tech-tag">Chemistry</span>
+                        <span class="tech-tag">Chemistry AI</span>
                         <span class="tech-tag">Python</span>
                     </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>AI DECK</h3>
-                        <div class="project-links">
-                            <a href="https://aideck.netlify.app/" class="project-link" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications" aria-label="Certifications and Credentials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Credentials & Badges</span>
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Verified professional credentials with online validation</p>
+            </div>
+            <div class="certifications-grid">
+                <!-- Certificate 1: OpenAI Columbia -->
+                <div class="cert-card glass-panel">
+                    <div class="cert-image-container" onclick="openCertModal('https://res.cloudinary.com/ddxtfqmt4/image/upload/v1790606078/Screenshot_2026-09-28_200420_hrq5sj.png', 'Prompt Engineering and Programming with OpenAI - Columbia University Plus')" role="button" tabindex="0" aria-label="View Prompt Engineering and Programming with OpenAI certificate">
+                        <img src="https://res.cloudinary.com/ddxtfqmt4/image/upload/v1790606078/Screenshot_2026-09-28_200420_hrq5sj.png" alt="Columbia Engineering Plus Certificate for Prompt Engineering and Programming with OpenAI awarded to Samuyel Dammu" class="cert-image" loading="lazy">
+                        <div class="cert-hover-overlay">
+                            <span class="cert-view-btn"><i class="fas fa-magnifying-glass-plus" aria-hidden="true"></i> View Certificate</span>
+                        </div>
+                        <span class="cert-badge-floating"><i class="fas fa-certificate" aria-hidden="true"></i> Verified</span>
+                    </div>
+                    <div class="cert-details">
+                        <div class="cert-issuer-row">
+                            <span class="cert-org"><i class="fas fa-university" aria-hidden="true"></i> Columbia University+ / OpenAI</span>
+                        </div>
+                        <h3 class="cert-name">Prompt Engineering and Programming with OpenAI</h3>
+                        <p class="cert-info">
+                            Mastered prompt engineering techniques, API orchestration, tokens & context management, and developing autonomous software with OpenAI large language models.
+                        </p>
+                        <div class="cert-footer">
+                            <a href="https://badges.plus.columbia.edu/e3844af1-c111-4191-93bf-84447c27fee9#acc.KfnYvleu" target="_blank" rel="noopener noreferrer" class="cert-btn-verify" aria-label="Verify Prompt Engineering certificate on Columbia Badges">
+                                <i class="fas fa-shield-check" aria-hidden="true"></i>
+                                <span>Verify Credential</span>
+                                <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                            <button class="cert-btn-preview" onclick="openCertModal('https://res.cloudinary.com/ddxtfqmt4/image/upload/v1790606078/Screenshot_2026-09-28_200420_hrq5sj.png', 'Prompt Engineering and Programming with OpenAI')" aria-label="Preview Prompt Engineering certificate">
+                                <i class="fas fa-eye" aria-hidden="true"></i>
+                            </button>
                         </div>
                     </div>
-                    <p class="project-description">
-                        A comprehensive platform that brings together various AI tools and services in one place. 
-                        Developed collaboratively with a friend to centralize AI resources for easy access.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">AI Integration</span>
-                        <span class="tech-tag">Web Development</span>
-                        <span class="tech-tag">Collaboration</span>
+                </div>
+
+                <!-- Certificate 2: Simplilearn GenAI -->
+                <div class="cert-card glass-panel">
+                    <div class="cert-image-container" onclick="openCertModal('https://res.cloudinary.com/ddxtfqmt4/image/upload/v1790606441/Screenshot_2026-09-28_200953_ozcqq5.png', 'Introduction to Generative AI Studio - Simplilearn')" role="button" tabindex="0" aria-label="View Introduction to Generative AI Studio certificate">
+                        <img src="https://res.cloudinary.com/ddxtfqmt4/image/upload/v1790606441/Screenshot_2026-09-28_200953_ozcqq5.png" alt="Simplilearn SkillUp Certificate for Introduction to Generative AI Studio awarded to Samuyel Dammu" class="cert-image" loading="lazy">
+                        <div class="cert-hover-overlay">
+                            <span class="cert-view-btn"><i class="fas fa-magnifying-glass-plus" aria-hidden="true"></i> View Certificate</span>
+                        </div>
+                        <span class="cert-badge-floating"><i class="fas fa-certificate" aria-hidden="true"></i> Verified</span>
+                    </div>
+                    <div class="cert-details">
+                        <div class="cert-issuer-row">
+                            <span class="cert-org"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Simplilearn SkillUp</span>
+                        </div>
+                        <h3 class="cert-name">Introduction to Generative AI Studio</h3>
+                        <p class="cert-info">
+                            In-depth learning of Google Cloud's Generative AI Studio, Foundation Models, prompt design tuning, multimodal AI applications, and enterprise generative AI solutions.
+                        </p>
+                        <div class="cert-footer">
+                            <button class="cert-btn-verify cert-btn-verify-trigger" onclick="openCertModal('https://res.cloudinary.com/ddxtfqmt4/image/upload/v1790606441/Screenshot_2026-09-28_200953_ozcqq5.png', 'Introduction to Generative AI Studio - Simplilearn')">
+                                <i class="fas fa-certificate" aria-hidden="true"></i>
+                                <span>Verified Certificate</span>
+                            </button>
+                            <button class="cert-btn-preview" onclick="openCertModal('https://res.cloudinary.com/ddxtfqmt4/image/upload/v1790606441/Screenshot_2026-09-28_200953_ozcqq5.png', 'Introduction to Generative AI Studio - Simplilearn')" aria-label="Preview Generative AI Studio certificate">
+                                <i class="fas fa-eye" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certificate 3: IBM Credly -->
+                <div class="cert-card glass-panel">
+                    <div class="cert-image-container" onclick="openCertModal('https://res.cloudinary.com/ddxtfqmt4/image/upload/v1790606566/Screenshot_2026-09-28_201227_kdnujw.png', 'Job Application Essentials - IBM Credly')" role="button" tabindex="0" aria-label="View Job Application Essentials certificate">
+                        <img src="https://res.cloudinary.com/ddxtfqmt4/image/upload/v1790606566/Screenshot_2026-09-28_201227_kdnujw.png" alt="IBM SkillsBuild Digital Credential for Job Application Essentials verified via Credly for Samuyel Dammu" class="cert-image" loading="lazy">
+                        <div class="cert-hover-overlay">
+                            <span class="cert-view-btn"><i class="fas fa-magnifying-glass-plus" aria-hidden="true"></i> View Certificate</span>
+                        </div>
+                        <span class="cert-badge-floating"><i class="fas fa-certificate" aria-hidden="true"></i> Verified</span>
+                    </div>
+                    <div class="cert-details">
+                        <div class="cert-issuer-row">
+                            <span class="cert-org"><i class="fab fa-ibm" aria-hidden="true"></i> IBM / Credly Verified</span>
+                        </div>
+                        <h3 class="cert-name">Job Application Essentials</h3>
+                        <p class="cert-info">
+                            Professional credential issued by IBM SkillsBuild for career preparedness, workplace communication, agile collaboration, and industry application readiness.
+                        </p>
+                        <div class="cert-footer">
+                            <a href="https://www.credly.com/badges/871b3a39-d8f0-4760-9798-b36668f99922/print" target="_blank" rel="noopener noreferrer" class="cert-btn-verify" aria-label="Verify Job Application Essentials on Credly">
+                                <i class="fas fa-shield-check" aria-hidden="true"></i>
+                                <span>Verify on Credly</span>
+                                <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </a>
+                            <button class="cert-btn-preview" onclick="openCertModal('https://res.cloudinary.com/ddxtfqmt4/image/upload/v1790606566/Screenshot_2026-09-28_201227_kdnujw.png', 'Job Application Essentials - IBM Credly')" aria-label="Preview Job Application Essentials certificate">
+                                <i class="fas fa-eye" aria-hidden="true"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -360,106 +678,187 @@
     </section>
 
     <!-- Achievements Section -->
-    <section id="achievements" class="achievements">
+    <section id="achievements" class="achievements" aria-label="Achievements">
         <div class="container">
-            <h2 class="section-title">Achievements</h2>
+            <div class="section-header">
+                <span class="section-tag">Recognitions</span>
+                <h2 class="section-title">Achievements</h2>
+            </div>
             <div class="achievements-grid">
-                <div class="achievement-card">
-                    <div class="achievement-icon">
+                <div class="achievement-card glass-panel">
+                    <div class="achievement-icon gold" aria-hidden="true">
                         <i class="fas fa-trophy"></i>
                     </div>
                     <h3>Top 5 Finalist</h3>
-                    <p>Secured a Top 5 Finalist position in a college-level hackathon among multiple teams</p>
+                    <p>Secured a Top 5 Finalist position in a competitive college-level hackathon among multiple innovative tech teams.</p>
                 </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">
+                <div class="achievement-card glass-panel">
+                    <div class="achievement-icon cyan" aria-hidden="true">
                         <i class="fas fa-medal"></i>
                     </div>
                     <h3>Regional Round Selection</h3>
-                    <p>Selected for Regional Round at Edunet for "Sign Speak: The Silent Communicator" project</p>
+                    <p>Selected for Regional Round at Edunet Foundation for "Sign Speak: The Silent Communicator" assistive AI project.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Interests Section -->
-    <section id="interests" class="interests-section">
+    <section id="interests" class="interests-section" aria-label="Personal Interests">
         <div class="container">
-            <h2 class="section-title">Interests</h2>
-            <div class="interests-content">
-                <div class="interests-grid">
-                    <div class="interest-card">
-                        <div class="interest-icon">
-                            <i class="fas fa-plane"></i>
-                        </div> 
-                        <h3>Travelling</h3>
-                        <p>Exploring new places and cultures, discovering perspectives that inspire creativity and broaden understanding.</p>
+            <div class="section-header">
+                <span class="section-tag">Beyond Code</span>
+                <h2 class="section-title">Interests & Passions</h2>
+            </div>
+            <div class="interests-grid">
+                <div class="interest-card glass-panel">
+                    <div class="interest-icon" aria-hidden="true">
+                        <i class="fas fa-plane-departure"></i>
+                    </div> 
+                    <h3>Travelling</h3>
+                    <p>Exploring diverse cultures, landscapes, and perspectives that kindle creativity and lateral thinking.</p>
+                </div>
+                <div class="interest-card glass-panel">
+                    <div class="interest-icon" aria-hidden="true">
+                        <i class="fas fa-film"></i>
                     </div>
-                    <div class="interest-card">
-                        <div class="interest-icon">
-                            <i class="fas fa-video"></i>
-                        </div>
-                        <h3>Video Editing using AI</h3>
-                        <p>Leveraging artificial intelligence tools to create engaging and professional video content with enhanced efficiency.</p>
+                    <h3>AI Video Creation</h3>
+                    <p>Leveraging state-of-the-art generative tools to design dynamic, cinematic video and storytelling media.</p>
+                </div>
+                <div class="interest-card glass-panel">
+                    <div class="interest-icon" aria-hidden="true">
+                        <i class="fas fa-microchip"></i>
                     </div>
-                    <div class="interest-card">
-                        <div class="interest-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h3>Prompt Engineering</h3>
-                        <p>Crafting effective prompts to optimize AI interactions and unlock the full potential of language models.</p>
+                    <h3>Prompt Engineering</h3>
+                    <p>Constructing high-precision prompts and system constraints to unlock maximum reasoning from LLMs.</p>
+                </div>
+                <div class="interest-card glass-panel">
+                    <div class="interest-icon" aria-hidden="true">
+                        <i class="fas fa-gamepad"></i>
                     </div>
-                    <div class="interest-card">
-                        <div class="interest-icon">
-                            <i class="fas fa-gamepad"></i>
-                        </div>
-                        <h3>Gaming</h3>
-                        <p>Enjoying various video games as a way to relax, develop strategic thinking, and explore immersive digital worlds.</p>
-                    </div>
+                    <h3>Strategic Gaming</h3>
+                    <p>Engaging in tactical games that sharpen rapid decision-making, pattern recognition, and focus.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact" aria-label="Contact Samuyel">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-header">
+                <span class="section-tag">Let's Build Together</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
             <div class="contact-content">
-                <div class="contact-info">
+                <div class="contact-card glass-panel">
                     <h3>Let's Connect!</h3>
-                    <p>I'm always open to discussing new opportunities, collaborating on projects, or just having a chat about technology and AI.</p>
+                    <p>I'm actively looking for opportunities in AI & ML engineering, Python full-stack development, and innovative tech collaborations.</p>
                     <div class="contact-links">
-                        <a href="https://github.com/Samuyel-256" class="contact-link" target="_blank">
-                            <i class="fab fa-github"></i>
+                        <a href="https://github.com/Samuyel-256" class="contact-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github" aria-hidden="true"></i>
                             <span>GitHub</span>
                         </a>
-                        <a href="https://www.linkedin.com/in/samuyel-dammu-732284322/" class="contact-link" target="_blank">
-                            <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/samuyel-dammu-732284322/" class="contact-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
                             <span>LinkedIn</span>
                         </a>
                         <a href="#" class="contact-link resume-link" id="resumeBtn">
-                            <i class="fas fa-file-pdf"></i>
+                            <i class="fas fa-file-pdf" aria-hidden="true"></i>
                             <span>Resume</span>
                         </a>
                     </div>
                     <div class="mail-button-container">
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dammusamuyel123@gmail.com&su=Hello%20Samuyel&body=Name:%20%0A%0AWhat%20you%20are%20contacted%20me:%20%0A%0A%0A%0AThank%20you" class="mail-button" target="_blank">
-                            <i class="fas fa-envelope"></i>
-                            <span>Send me an Email</span>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dammusamuyel123@gmail.com&su=Hello%20Samuyel&body=Hi%20Samuyel,%0A%0AI%20reviewed%20your%20portfolio%20and%20would%20love%20to%20connect%20with%20you.%0A%0A%0ABest%20regards," class="mail-button" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                            <span>Send Me an Email</span>
                         </a>
+                    </div>
+
+                    <!-- Explicit Form / Communication Consent Notice -->
+                    <div class="consent-notice" role="note">
+                        <i class="fas fa-shield-halved" aria-hidden="true"></i>
+                        <span><strong>Communication Consent:</strong> By reaching out via email, you consent to direct professional correspondence. Your contact information is kept strictly confidential and will never be shared or used for unsolicited marketing.</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <!-- Footer with Legal Links & Copyright -->
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <p>&copy; 2024 Samuyel. All rights reserved.</p>
+            <div class="footer-top">
+                <div class="footer-legal-links">
+                    <button class="footer-legal-btn" onclick="openPolicyModal('privacy')">Privacy Policy</button>
+                    <span class="legal-divider">•</span>
+                    <button class="footer-legal-btn" onclick="openPolicyModal('terms')">Terms & Conditions</button>
+                    <span class="legal-divider">•</span>
+                    <button class="footer-legal-btn" onclick="openPolicyModal('cookies')">Cookie Preferences</button>
+                    <span class="legal-divider">•</span>
+                    <button class="footer-legal-btn" onclick="openPolicyModal('copyright')">Copyright & Attribution</button>
+                </div>
+            </div>
+            
+            <div class="footer-content">
+                <p>&copy; 2026 Samuyel Dammu. All rights reserved. Built with modern web standards and accessibility.</p>
+                <div class="footer-links" aria-label="Footer Social Links">
+                    <a href="https://github.com/Samuyel-256" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/samuyel-dammu-732284322/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dammusamuyel123@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+            <!-- Third-Party Trademark Disclaimer -->
+            <div class="footer-disclaimer">
+                <p>Disclaimer: All third-party trademarks, certification badges, and logos (OpenAI, Columbia University, IBM, Google, Zscaler, AICTE, Edunet) belong to their respective owners and are displayed strictly for educational, credential verification, and career portfolio purposes.</p>
+            </div>
         </div>
     </footer>
+
+    <!-- Cookie & Local Storage Consent Banner -->
+    <div id="cookieBanner" class="cookie-banner" role="region" aria-label="Cookie and Local Storage Notice">
+        <div class="cookie-content">
+            <div class="cookie-icon" aria-hidden="true">
+                <i class="fas fa-cookie-bite"></i>
+            </div>
+            <div class="cookie-text">
+                <strong>Cookie & Storage Notice:</strong> We use local storage strictly to save your preferred theme (Light/Dark mode) and remember your settings. No invasive third-party tracking cookies are deployed on this portfolio.
+            </div>
+            <div class="cookie-actions">
+                <button class="btn-cookie-accept" onclick="acceptCookies()">Accept & Continue</button>
+                <button class="btn-cookie-learn" onclick="openPolicyModal('cookies')">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificate Lightbox Modal -->
+    <div id="certModal" class="cert-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+        <div class="cert-modal-backdrop" onclick="closeCertModal()"></div>
+        <div class="cert-modal-dialog">
+            <button class="cert-modal-close" onclick="closeCertModal()" aria-label="Close certificate modal">&times;</button>
+            <div class="cert-modal-header">
+                <h3 id="certModalTitle">Certificate Preview</h3>
+            </div>
+            <div class="cert-modal-body">
+                <img id="certModalImage" src="" alt="Enlarged view of verified certificate credential">
+            </div>
+        </div>
+    </div>
+
+    <!-- Legal Policy Modal (Privacy Policy / Terms & Conditions / Cookies / Copyright) -->
+    <div id="policyModal" class="cert-modal policy-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="policyModalTitle">
+        <div class="cert-modal-backdrop" onclick="closePolicyModal()"></div>
+        <div class="cert-modal-dialog policy-modal-dialog">
+            <button class="cert-modal-close" onclick="closePolicyModal()" aria-label="Close legal modal">&times;</button>
+            <div class="cert-modal-header">
+                <h3 id="policyModalTitle">Legal Information</h3>
+            </div>
+            <div class="policy-modal-body" id="policyModalBody">
+                <!-- Dynamically injected content -->
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
